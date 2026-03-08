@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Catalo-mobile
 
 # 🛍️ Mobile Store App
@@ -126,3 +127,6 @@ Abra no **Expo Go** ou em um **emulador Android/iOS**.
 # 👨‍💻 Autor
 
 Projeto desenvolvido para a disciplina de **Mobile Development** com foco em **React Native, consumo de API REST e gerenciamento de estado com Redux Toolkit**.
+=======
+# Catalogo-Mobile
+>>>>>>> 20954e2963b78d2d9254c54b12b87108e123a38e
