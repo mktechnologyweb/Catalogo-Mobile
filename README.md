@@ -1,50 +1,128 @@
-# Welcome to your Expo app 👋
+# Catalo-mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🛍️ Mobile Store App
 
-## Get started
+Aplicativo mobile desenvolvido com **React Native e Expo** que consome uma **API REST** para exibir produtos organizados por categorias.
 
-1. Install dependencies
+O projeto foi desenvolvido para a disciplina de **Mobile Development**, com foco em consumo de API, navegação entre telas e gerenciamento de estado.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+# 📱 Demonstração do Aplicativo
 
-   ```bash
-   npx expo start
-   ```
+## 🔐 Tela de Login
 
-In the output, you'll find options to open the app in a
+Permite que o usuário acesse o aplicativo informando **username** e **senha**.
+O sistema também possui **validação de campos obrigatórios**.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+![Tela Login](assets/images/login.jpeg)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## ⚠️ Validação de Campos
 
-When you're ready, run:
+Caso os campos não sejam preenchidos corretamente, o aplicativo mostra uma **mensagem de erro** indicando que os dados são obrigatórios.
 
-```bash
-npm run reset-project
+![Validação Login](assets/images/campo_obrigatorio.jpeg)
+![Validação Login](assets/images/username_e_senha_invalidos.jpeg)
+---
+
+## 👕 Produtos Masculinos
+
+Após realizar o login, o usuário pode visualizar os **produtos da categoria masculina**.
+Os dados são carregados dinamicamente através de uma **API externa**.
+
+![Produtos Masculinos](assets/images/masculino.jpeg)
+
+---
+
+## 👗 Produtos Femininos
+
+O aplicativo também permite visualizar **produtos femininos**, exibidos em formato de lista com imagem, nome e preço.
+
+![Produtos Femininos](assets/images/feminino.jpeg)
+
+---
+
+# 🚀 Tecnologias Utilizadas
+
+* **React Native**
+* **Expo**
+* **Expo Router**
+* **Axios**
+* **Redux Toolkit**
+* **JavaScript**
+
+---
+
+# 🔌 Consumo de API
+
+Os produtos são carregados a partir de uma **API REST externa** utilizando a biblioteca **Axios**.
+As requisições são feitas de forma assíncrona e os dados são exibidos dinamicamente na interface do aplicativo.
+
+---
+
+# 🧭 Navegação
+
+A navegação entre as telas foi implementada utilizando **Expo Router**, permitindo:
+
+* Tela de **Login** 
+* Tela de **Produtos Masculinos**
+* Tela de **Produtos Femininos**
+* Navegação entre categorias
+
+---
+
+# 🗂 Estrutura do Projeto
+
+A aplicação foi organizada para facilitar manutenção e escalabilidade:
+
+```
+src
+ ├── components
+ │   └── componentes reutilizáveis
+ │
+ ├── screens
+ │   └── telas do aplicativo
+ │
+ ├── services
+ │   └── consumo da API
+ │
+ ├── store
+ │   └── configuração do Redux Toolkit
+ │
+ └── assets
+     └── imagens e recursos visuais
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+# ▶️ Como Executar o Projeto
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1️⃣ Clonar o repositório
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
 
-## Join the community
+### 2️⃣ Instalar dependências
 
-Join our community of developers creating universal apps.
+```bash
+npm install
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 3️⃣ Iniciar o projeto
+
+```bash
+npx expo start
+```
+
+### 4️⃣ Executar o aplicativo
+
+Abra no **Expo Go** ou em um **emulador Android/iOS**.
+
+---
+
+# 👨‍💻 Autor
+
+Projeto desenvolvido para a disciplina de **Mobile Development** com foco em **React Native, consumo de API REST e gerenciamento de estado com Redux Toolkit**.
