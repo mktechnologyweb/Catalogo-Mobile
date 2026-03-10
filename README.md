@@ -42,7 +42,6 @@ Os dados são carregados dinamicamente através de uma **API externa**.
 O aplicativo também permite visualizar **produtos femininos**, exibidos em formato de lista com imagem, nome e preço.
 
 ![Produtos Femininos](assets/images/feminino.jpeg)
-
 ---
 
 
